@@ -1,0 +1,270 @@
+body {
+  background-color: #000  !important;
+}
+
+/* Header */
+
+div#header {
+  background-color: #000;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 20px;
+}
+
+div#header h2 {
+  font-family: 'Hind Siliguri', sans-serif;
+  font-size: 26px;
+  color: #ddd;
+  margin-top: .7em;
+  margin-left: 3em;
+  padding: 0;
+}
+
+div#header img {
+  float: left;
+  margin: .5em .6em 0 .75em;
+}
+
+div#branding {
+  margin-left: 1%;
+  display: inline-block;
+}
+
+/* the removed float: left; and display: inline-block; also fixes floating when resizing */
+
+/* Navigation */
+
+div#navbar {
+  width: 70%;
+  margin: auto;
+  padding: 2px;
+  display: inline-block;
+  text-align: center;
+}
+
+/* yey! I have done it, arranged social icons and Share burrin without grid! 
+but I was here just in front #navbar not social-navbar and entered display: inline-block; Its s
+strange that it was sorted out like this */
+
+div#navbar ul {
+  list-style-type: none;
+  margin: 15px 60px;
+}
+
+div#navbar ul li {
+  background-color: #000;
+  text-align: center;
+  display: inline;
+}
+
+div#navbar ul li a {
+  font-family: 'Karla', sans-serif;
+  font-size: .9em;
+  text-decoration: none;
+  color: #fff;
+  margin-right: 30px;
+}
+
+div#navbar ul li a.current {
+  color: orange;
+  font-style: italic;
+}
+
+div#navbar ul li a:hover {
+  color: #929595;
+}
+
+/* Social Navbar */
+
+#social-navbar {
+  display: inline;
+  padding-left: 30px;
+}
+
+#social-navbar a {
+  margin-right: 20px;
+}
+
+/* yey, I have figured our how to separate icons! */
+
+/* Font Awsome */
+
+.fa-facebook-f {
+  color: #FA8072;
+}
+
+.fa-500px {
+  color: #FA8072;
+}
+
+/* Share Dropdown Button */
+
+.dropbtn {
+  color: #fff;
+  background-color: #706d6d;
+  /* background-color: #000; */
+  font-size: 10px;
+  padding: 4px 7px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+/* Dropdown button on hover & focus */
+
+.dropbtn:hover,
+.dropbtn:focus {
+  background-color: #FA8072;
+}
+
+/* The container <div> - needed to position the dropdown content */
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #706d6d;
+  min-width: 180px;
+  overflow: auto;
+  /* z-index: -1; */
+  right: 0;
+  width: 80px;
+}
+
+/* Links inside the dropdown */
+
+.dropdown-content a {
+  color: #fff;
+  padding: 10px 17px;
+  text-decoration: none;
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  width: 180px;
+  border-top: 1px solid #929595;
+}
+
+/* Change color of dropdown links on hover */
+
+.dropdown a:hover {
+  background-color: #929595;
+  color: #EAEAEA;
+  text-decoration: none;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+
+.show {
+  display: block;
+}
+
+/* Main Body */
+
+h5 {
+  color: #fff;
+  font-weight: 300;
+  font-family: 'Dosis', sans-serif; 
+  
+}
+
+div#content p {
+  color: #D3D3D3;
+  font-weight: 200;
+  /* font-family: 'Dosis', sans-serif; */
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+div#showcase {
+  padding-top: 7%;
+  margin: auto;
+  width: 50%;
+}
+
+img#main-image {
+  width: 100%;
+}
+
+div#main-body {
+  text-align: center;
+}
+
+div#content {
+  width: 25%;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 40px;
+  margin-left: auto;  /* stops text moving */
+  margin-right: auto; /* stops text moving */
+}
+
+div#content p {
+  text-align: justify;
+}
+
+/* FORM */
+
+
+div.container {
+  width: 25%;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 40px;
+  padding-left: 40px;
+}
+
+form { 
+  transition: all 4s ease-in-out;
+}
+
+.form-control {
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #929595;
+  color: #fff;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 200;
+}
+
+input {
+  height: 35px;
+}
+
+form .submit {
+  background-color: #706d6d;
+  border-color: transparent;
+  color: #EBEBEB;
+}
+
+form .submit:hover {
+  background-color: #FA8072;
+  cursor: pointer;
+}
+
+
+/* FOOTER */
+
+
+div#footer {
+  bottom: 0;
+  left: 0;
+  padding-left: 30px;
+  padding-bottom: 40px;
+}
+
+div#footer h6 {
+  color: 	#808080;
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-weight: 200;
+  display: inline;
+  font-size: 12px;
+}
+

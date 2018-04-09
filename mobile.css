@@ -1,0 +1,88 @@
+div#header {
+    width: 100%;
+    position: absolute;
+    padding-bottom: 10px;
+}
+
+div#branding {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+   }
+
+    div#branding img { 
+    float: left;
+    margin-top: 5px;  
+    margin-left: 75px;
+  }
+
+  div#branding h2 {
+    margin-top: 15px; 
+    margin-right: 70px; 
+  }
+
+div#navbar {
+    display: inline;
+}
+
+div#navbar ul li {
+    width: 50%;
+    text-align: center;
+    display: inline-block;
+    padding: 10px; 
+    margin-top: -30px;
+}
+
+#social-navbar {
+    width: 100%;
+    /* display: inline; */
+    text-align: center; 
+    float: left;
+    /* padding-top: 10px; */
+    margin-bottom: 15px;
+}
+
+  img#main-image {
+    padding: auto;
+    margin-top: 330px;
+    width: 100%;
+    }
+
+    .dropdown {
+        display: none; 
+    }
+
+    /* About */
+
+div#content { 
+    width: 80%;
+    display: block;
+    padding-right: 20px; 
+    padding-left: 20px;
+    margin-top: 40px; 
+    margin-left: auto; 
+    margin-right: auto; 
+    }
+      
+div.container {
+    width: 80%;
+    display: block;
+    margin-top: 40px;
+    padding-right: 20px; 
+    padding-left: 20px;
+    }
+
+
+div#footer {
+        bottom: 0;
+        left: 0;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+.column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }

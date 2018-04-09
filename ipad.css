@@ -1,0 +1,68 @@
+div#header {
+  width: 100%;
+}
+
+div#branding {
+  margin-left: 2px;
+  display: inline-block;
+}
+
+div#branding img {
+  margin-top: 7px;
+}
+
+div#navbar {
+  width: 70%;
+  margin: -70px;
+  text-align: center;
+}
+
+div#social-navbar {
+  display: inline;
+}
+
+/* Main Image */
+
+div#showcase {
+  padding: auto;
+  margin-top: -20px;
+  width: 100%;
+}
+
+/* About */
+
+div#content {
+  width: 40%;
+  display: inline-block;
+  vertical-align: top;
+  padding-right: 20px;
+  margin-top: 40px;
+  margin-left: auto;  /* stops text moving */
+  margin-right: auto; /* stops text moving */
+}
+
+div.container {
+  width: 40%;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 40px;
+  padding-left: 40px;
+}
+ 
+/* Footer */
+
+div#footer {
+  bottom: 0;
+  left: 0;
+  padding-left: 30px;
+  padding-bottom: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+.column {
+  -ms-flex: 50%;
+  flex: 50%;
+  max-width: 50%;
+}
+
+
