@@ -6,6 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118663084-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-118663084-1');
+    </script>
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
 
@@ -14,7 +27,7 @@
     <link rel="stylesheet" type="text/css" href="reflections.css">
     <link rel="stylesheet" type="text/css" href="ipad.css" media="screen and (max-width: 1024px)">
     <link rel="stylesheet" type="text/css" href="mobile.css" media="screen and (max-width: 768px)">
-
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png">
 
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 
@@ -39,7 +52,9 @@
 
         <div id="branding">
             <img src="logos/SSPlogo.png" alt="logo" width="50" height="50">
-            <h2>Sowlus Simkus</h2>
+            <a class="index" href="./index.html">
+                <h2>Sowlus Simkus</h2>
+            </a>
         </div>
 
         <!-- Navigation Menu -->
@@ -78,11 +93,11 @@
                 <button onclick="myFunction()" class="dropbtn">Share</button>
                 <div id="myDropdown" class="dropdown-content">
                     <a href="https://www.facebook.com/sharer/sharer.php?u=" target="_blank">
-                        <i class="fab fa-facebook-square"></i>&nbsp &nbsp Share on Facebook</a>
-                    <a href="https://twitter.com/home?status=" target="_blank">
-                        <i class="fab fa-twitter-square"></i>&nbsp &nbsp Share on Twiter</a>
-                    <a href="https://pinterest.com/pin/create/button/?url=&media=&description=" target="_blank">
-                        <i class="fab fa-pinterest-square"></i>&nbsp &nbsp Pin to Pinterest</a>
+                        <i class="fab fa-facebook-square fa-lg"></i>Share on Facebook</a>
+                    <a href="http://www.twitter.com/share?url=http://www.sowlusimkus.com/sunsets.html" target="_blank">
+                        <i class="fab fa-twitter-square fa-lg"></i>Share on Twiter</a>
+                    <a href="https://plus.google.com/share?url=http://www.sowlusimkus.com/sunsets.html" target="_blank">
+                        <i class="fab fa-google-plus-square fa-lg"></i>Share on Google+</a>
                 </div>
             </div>
         </div>
@@ -98,25 +113,31 @@
                 <a href="Galleries/Sunsets/Resized_L/Sunset_10.jpeg" data-lightbox="gallery_S" data-title="">
                     <img src="Galleries/Sunsets/Resized_S/Sunsets_10.jpg" class="focus" width="100%">
                 </a>
-                <a href="Galleries/Sunsets/Resized_L/Sunset_11.jpg" data-lightbox="gallery_S" data-title="">
-                    <img src="Galleries/Sunsets/Resized_S/Sunsets_11.jpg" class="focus" width="100%">
+
+                <a href="Galleries/Sunsets/Resized_L/Sunset_13.jpeg" data-lightbox="gallery_S" data-title="">
+                    <img src="Galleries/Sunsets/Resized_S/Sunsets_13.jpg" class="focus" width="100%">
                 </a>
+
+
                 <a href="Galleries/Sunsets/Resized_L/Sunset_12.jpeg" data-lightbox="gallery_S" data-title="">
                     <img src="Galleries/Sunsets/Resized_S/Sunsets_12.jpg" class="focus" width="100%">
+                </a>
+                <a href="Galleries/Sunsets/Resized_L/Sunsets_21.jpeg" data-lightbox="gallery_S" data-title="Ready for the night">
+                    <img src="Galleries/Sunsets/Resized_S/Sunsets_21.jpg" class="focus" width="100%">
                 </a>
             </div>
 
 
             <div class="column">
-                
-
-                    <a href="Galleries/Sunsets/Resized_L/Sunset_19.jpeg" data-lightbox="gallery_S" data-title="">
-                        <img src="Galleries/Sunsets/Resized_S/Sunsets_19.jpg" class="focus" width="100%">
-                    </a>
 
 
+                <a href="Galleries/Sunsets/Resized_L/Sunset_19.jpeg" data-lightbox="gallery_S" data-title="">
+                    <img src="Galleries/Sunsets/Resized_S/Sunsets_19.jpg" class="focus" width="100%">
+                </a>
 
-               
+
+
+
                 <a href="Galleries/Sunsets/Resized_L/Sunset_16.jpg" data-lightbox="gallery_S" data-title="">
                     <img src="Galleries/Sunsets/Resized_S/Sunsets_16.jpg" class="focus" width="100%">
                 </a>
@@ -127,7 +148,7 @@
                 <a href="Galleries/Sunsets/Resized_L/Sunset_15.jpeg" data-lightbox="gallery_S" data-title="">
                     <img src="Galleries/Sunsets/Resized_S/Sunsets_15.jpg" class="focus" width="100%">
                 </a>
-                
+
             </div>
 
 
@@ -147,7 +168,7 @@
                 <a href="Galleries/Sunsets/Resized_L/Sunset_5.jpeg" data-lightbox="gallery_S">
                     <img src="Galleries/Sunsets/Resized_S/Sunsets_5.jpg" class="focus" width="100%">
                 </a>
-                
+
 
                 <a href="Galleries/Sunsets/Resized_L/Sunset_1.jpg" data-lightbox="gallery_S" data-title="">
                     <img src="Galleries/Sunsets/Resized_S/Sunsets_1.jpg" class="focus" width="100%">
@@ -172,9 +193,12 @@
                 <a href="Galleries/Sunsets/Resized_L/Sunset_14.jpeg" data-lightbox="gallery_S" data-title="">
                     <img src="Galleries/Sunsets/Resized_S/Sunsets_14.jpg" class="focus" width="100%">
                 </a>
-                <a href="Galleries/Sunsets/Resized_L/Sunset_13.jpeg" data-lightbox="gallery_S" data-title="">
-                    <img src="Galleries/Sunsets/Resized_S/Sunsets_13.jpg" class="focus" width="100%">
+
+
+                <a href="Galleries/Sunsets/Resized_L/Sunset_11.jpg" data-lightbox="gallery_S" data-title="">
+                    <img src="Galleries/Sunsets/Resized_S/Sunsets_11.jpg" class="focus" width="100%">
                 </a>
+
             </div>
 
         </div>
@@ -193,7 +217,6 @@
 
             <h6>&copy: Sowlus Simkus Photography</h6>
             <h6>
-                <br> Written and coded by S. Simkus</h6>
 
         </div>
 
