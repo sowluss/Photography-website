@@ -24,9 +24,13 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
 
+
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="ipad.css" media="screen and (max-width: 1024px)">
     <link rel="stylesheet" type="text/css" href="mobile.css" media="screen and (max-width: 768px)">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="shortcut icon" type="image/png" href="images/favicon.png">
 
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
@@ -51,17 +55,21 @@
         <!-- Logo & Title -->
 
         <div id="branding">
-            <img src="logos/SSPlogo.png" alt="logo" width="50" height="50">
-            <h2>Sowlus Simkus</h2>
+            <a href="index.html"><img src="logos/SSPlogo.png" alt="logo" width="60" height="60"></a>
+            <a href="index.html">
+                <h2>Sowlus Simkus</h2>
+            </a>
         </div>
 
         <!-- Navigation Menu -->
 
         <div id="navbar">
+
             <ul>
                 <li>
-                    <a class="current" href="index.html">Home</a>
+                    <a class="current" href="index.html">About</a>
                 </li>
+
                 <li>
                     <a href="reflections.html">Reflections</a>
                 </li>
@@ -86,7 +94,10 @@
             <a href="https://500px.com/sowluss" target="_blank">
                 <i class="fab fa-500px fa-lg"></i>
             </a>
-
+            <a href="https://www.youtube.com/channel/UCvJ94MLfisViSgwBXn9QksQ?view_as=subscriber" target="_blank">
+                <i class="fab fa-youtube fa-lg"></i>
+            </a>
+            
             <div class="dropdown">
                 <button onclick="myFunction()" class="dropbtn">Share</button>
                 <div id="myDropdown" class="dropdown-content">
@@ -103,12 +114,13 @@
 
     </div>
 
-
+    <div style="clear: both"></div>
     <!-- Showcase -->
 
 
     <div id="showcase">
         <img id="main-image" src="images/thebeach_main.jpg" alt="beach">
+        <img id="mobile-image" src="images/thebeach_mobile.jpg" alt="beach">
     </div>
 
 
@@ -118,9 +130,9 @@
         <div id="content">
             <h5>About me</h5>
             <br>
-            <p>My name is Sowlus Simkus. Although I am from Lithuania, I lived abroad for a long time. Photography has been
-                my passion. With a help of nature, surroundings and my camera, I love memorizing special and unusual moments
-                with a click of the shutter button. I hope that you will enjoy my photogrhaphy galleries. Please contact
+            <p>My name is Sowlus Peter Simkus. Although I am from Lithuania, I lived abroad for a long time. I love
+                memorizing special, unusual moments with a click of the shutter button and with a help of nature.
+                I hope that you will enjoy my photogrhaphy galleries. Please contact
                 me if you have any feedback, comments or questions.
                 <br>
                 <br>
@@ -131,16 +143,6 @@
         <div class="container">
             <h5>Contact</h5>
             <br>
-            <!-- <form id="contact-form" method="POST" action="mailto:sowluss@gmail.com" enctype="text/plain"> 
-                <input name="name" type="text" class="form-control" placeholder="Your name" required>
-                <br>
-                <input name="email" type="email" class="form-control" placeholder="Your email" required>
-                <br>
-                <textarea name="message" class="form-control" placeholder="Message" cols="30" rows="4"></textarea>
-                <br>
-                <input type="submit" class="form-control submit" value="Send message">
-                <br>
-            </form>-->
 
             <form id="contact-form" action="contactform.php" method="post">
                 <input type="text" name="name" class="form-control" placeholder="Full name" required>
