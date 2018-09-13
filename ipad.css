@@ -1,31 +1,79 @@
 div#header {
   width: 100%;
+  /* justify-content: center;
+  align-items: center; 
+  position: absolute; */
+  /* z-index: 1; */
+  display: block;
+  position: relative;
+  height: 200px;
 }
 
 div#branding {
-  margin-left: 2px;
-  display: inline-block;
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
 }
 
 div#branding img {
-  margin-top: 7px;
+  float: none;
+  display: block;
+  margin: 30px auto 5px auto;
+  width: 80px;
+  height: 80px;
 }
 
+div#header h2 {
+  font-family: 'Hind Siliguri', sans-serif;
+  font-size: 26px;
+  color: #ddd;
+  margin: 20px auto 5px auto;
+  padding: 0;
+  display: block;
+  justify-content: centre;
+  flex-direction: column;
+  align-items: centre;
+}
+
+
 div#navbar {
-  width: 70%;
-  margin: -70px;
+
+  width: 100%;
+  margin: 20px auto 5px auto;
   text-align: center;
 }
 
-div#social-navbar {
-  display: inline;
+div#navbar ul li a {
+  font-family: 'Karla', sans-serif;
+  font-weight: 100;
+  font-size: 18px;
+  text-decoration: none;
+  color: #fff;
+  margin-right: 35px;
 }
+
+div#social-navbar {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px 20px 20px;
+  float: none;
+  text-align: center;
+}
+
+/* Dropdown content */
+.dropdown-content a {
+  text-align: left;
+}
+
+
+
 
 /* Main Image */
 
 div#showcase {
   padding: auto;
-  margin-top: -20px;
+  margin-top: 40px;
   width: 100%;
 }
 
@@ -37,8 +85,10 @@ div#content {
   vertical-align: top;
   padding-right: 20px;
   margin-top: 40px;
-  margin-left: auto;  /* stops text moving */
-  margin-right: auto; /* stops text moving */
+  margin-left: auto;
+  /* stops text moving */
+  margin-right: auto;
+  /* stops text moving */
 }
 
 div.container {
@@ -48,15 +98,21 @@ div.container {
   margin-top: 40px;
   padding-left: 40px;
 }
- 
+
+.row {
+  margin-top: 160px;
+}
+
 /* Footer */
 
 div#footer {
   bottom: 0;
   left: 0;
-  padding-left: 30px;
-  padding-bottom: 10px;
+  text-align: center;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
+
 
 /* Responsive layout - makes a two column-layout instead of four columns */
 .column {
@@ -64,5 +120,3 @@ div#footer {
   flex: 50%;
   max-width: 50%;
 }
-
-
