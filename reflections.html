@@ -25,8 +25,8 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="lightbox.css">
     <link rel="stylesheet" type="text/css" href="reflections.css">
-    <link rel="stylesheet" type="text/css" href="ipad.css" media="screen and (max-width: 1024px)">
-    <link rel="stylesheet" type="text/css" href="mobile.css" media="screen and (max-width: 768px)">
+    <link rel="stylesheet" type="text/css" href="ipad.css" media="screen and (max-width: 1200px)">
+    <link rel="stylesheet" type="text/css" href="mobile.css" media="screen and (max-width: 620px)">
     <link rel="shortcut icon" type="image/png" href="images/favicon.png">
 
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
@@ -46,13 +46,34 @@
 
     <!-- Header -->
 
+    <!-- Mobile Collapse button -->
+    <div class="mobile-sidebar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="reflections.html" class="current">Reflections</a></li>
+            <li><a href="lithuania.html">Lithuania</a></li>
+            <li><a href="england.html">England</a></li>
+            <li><a href="sunsets.html">Sunsets</a></li>
+        </ul>
+        <button class="sidebar-btn">
+            <span></span>
+        </button>
+    </div>
+
+    <div class="mobile-branding">
+        <img src="logos/SSPlogo.png" alt="logo">
+        <h2>Sowlus Simkus</h2>
+    </div>
+
     <div id="header">
 
         <!-- Logo & Title -->
 
         <div id="branding">
-            <img src="logos/SSPlogo.png" alt="logo" width="50" height="50">
-            <a class="index" href="./index.html"><h2>Sowlus Simkus</h2></a>
+            <img src="logos/SSPlogo.png" alt="logo" width="60" height="60">
+            <a class="index" href="./index.html">
+                <h2>Sowlus Simkus</h2>
+            </a>
         </div>
 
         <!-- Navigation Menu -->
@@ -86,6 +107,9 @@
             <a href="https://500px.com/sowluss" target="_blank">
                 <i class="fab fa-500px fa-lg"></i>
             </a>
+            <a href="https://www.youtube.com/channel/UCvJ94MLfisViSgwBXn9QksQ?view_as=subscriber" target="_blank">
+                <i class="fab fa-youtube fa-lg"></i>
+            </a>
 
             <div class="dropdown">
                 <button onclick="myFunction()" class="dropbtn">Share</button>
@@ -99,12 +123,17 @@
                 </div>
             </div>
         </div>
+    </div>
 
+    <!-- GALLERY STARTS HERE -->
 
-        <div class="row">
+    <div class="row">
 
-            <div class="column">
-                <a href="Galleries/Reflections/Resized_L/lReflections_1.jpg" data-lightbox="gallery_R" data-title="Sunset Colours" class="c-right">
+        <div class="column">
+            <a href="Galleries/Reflections/Resized_L/Reflections_24.jpeg" data-lightbox="gallery_R" data-title="Double Vision">
+                <img src="Galleries/Reflections/Resized_s/sReflections_24.jpeg" class="focus" width="100%">
+            </a>
+                <a href="Galleries/Reflections/Resized_L/lReflections_1.jpg" data-lightbox="gallery_R" data-title="Sunset Colours">
                     <img src="Galleries/Reflections/Resized_s/sReflections_1.jpg" class="focus" width="100%">
                 </a>
                 <a href="Galleries/Reflections/Resized_L/lReflections_15.jpg" data-lightbox="gallery_R" data-title="Mirror Lake"="">
@@ -126,14 +155,18 @@
 
 
             <div class="column">
+
+                    <a href="Galleries/Reflections/Resized_L/Reflections_25.jpeg" data-lightbox="gallery_R" data-title="Springtime Evening">
+                        <img src="Galleries/Reflections/Resized_s/sReflections_25.jpeg" class="focus" width="100%">
+                    </a>
                 <a href="Galleries/Reflections/Resized_L/lReflections_18v.jpg" data-lightbox="gallery_R" data-title="Calm Reflections">
                     <img src="Galleries/Reflections/Resized_s/sReflections_18v.jpg" class="focus" width="100%">
                 </a>
                 <a href="Galleries/Reflections/Resized_L/lReflections_20.jpg" data-lightbox="gallery_R" data-title="Deep Blue">
                     <img src="Galleries/Reflections/Resized_s/sReflections_20.jpg" class="focus" width="100%">
                 </a>
-                <a href="Galleries/Reflections/Resized_L/lReflections_4v.jpg" data-lightbox="gallery_R" data-title="Evening Stilness">
-                    <img src="Galleries/Reflections/Resized_s/sReflections_4v.jpg" class="focus" width="100%">
+                <a href="Galleries/Reflections/Resized_L/lReflections_4v.jpeg" data-lightbox="gallery_R" data-title="Evening Stilness">
+                    <img src="Galleries/Reflections/Resized_s/sReflections_4v.jpeg" class="focus" width="100%">
                 </a>
                 <a href="Galleries/Reflections/Resized_L/lReflections_5.jpg" data-lightbox="gallery_R" data-title="Autumn Palette">
                     <img src="Galleries/Reflections/Resized_s/sReflections_5.jpg" class="focus" width="100%">
@@ -145,6 +178,11 @@
 
 
             <div class="column">
+
+                <a href="Galleries/Reflections/Resized_L/Reflections_23.jpg" data-lightbox="gallery_R" data-title="Evening Calmness">
+                    <img src="Galleries/Reflections/Resized_s/sReflections_23.jpg" class="focus" width="100%">
+                </a>
+
                 <a href="Galleries/Reflections/Resized_L/lReflections_14.jpg" data-lightbox="gallery_R">
                     <img src="Galleries/Reflections/Resized_s/sReflections_14.jpg" class="focus" width="100%">
                 </a>
@@ -166,6 +204,11 @@
             </div>
 
             <div class="column">
+
+                    <a href="Galleries/Reflections/Resized_L/Reflections_26.jpeg" data-lightbox="gallery_R" data-title="Springtime Calmness">
+                        <img src="Galleries/Reflections/Resized_s/sReflections_26.jpeg" class="focus" width="100%">
+                    </a>
+
                 <a href="Galleries/Reflections/Resized_L/lReflections_11.jpg" data-lightbox="gallery_R">
                     <img src="Galleries/Reflections/Resized_s/sReflections_11.jpg" class="focus" width="100%">
                 </a>
@@ -178,8 +221,8 @@
                 <a href="Galleries/Reflections/Resized_L/lReflections_7.jpg" data-lightbox="gallery_R">
                     <img src="Galleries/Reflections/Resized_s/sReflections_7.jpg" class="focus" width="100%">
                 </a>
-                <a href="Galleries/Reflections/Resized_L/lReflections_8.jpg" data-lightbox="gallery_R">
-                    <img src="Galleries/Reflections/Resized_s/sReflections_8.jpg" class="focus" width="100%">
+                <a href="Galleries/Reflections/Resized_L/lReflections_8.jpeg" data-lightbox="gallery_R">
+                    <img src="Galleries/Reflections/Resized_s/sReflections_8.jpeg" class="focus" width="100%">
                 </a>
             </div>
 
@@ -199,7 +242,7 @@
 
             <h6>&copy: Sowlus Simkus Photography</h6>
             <h6>
-               
+
 
         </div>
 

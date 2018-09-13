@@ -26,8 +26,8 @@
 
 
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" type="text/css" href="ipad.css" media="screen and (max-width: 1024px)">
-    <link rel="stylesheet" type="text/css" href="mobile.css" media="screen and (max-width: 768px)">
+    <link rel="stylesheet" type="text/css" href="ipad.css" media="screen and (max-width: 1200px)">
+    <link rel="stylesheet" type="text/css" href="mobile.css" media="screen and (max-width: 620px)">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -49,6 +49,27 @@
 
 
     <!-- Header -->
+
+     <!-- Mobile Collapse button -->
+     <div class="mobile-sidebar">
+        <ul>
+            <li><a href="index.html" class="current">Home</a></li>
+            <li><a href="reflections.html">Reflections</a></li>
+            <li><a href="lithuania.html">Lithuania</a></li>
+            <li><a href="england.html">England</a></li>
+            <li><a href="sunsets.html">Sunsets</a></li>
+        </ul>
+        <button class="sidebar-btn">
+            <span></span>
+        </button>
+    </div>
+
+    <div class="mobile-branding">
+        <img src="logos/SSPlogo.png" alt="logo">
+        <h2>Sowlus Simkus</h2>
+    </div>
+
+    <!-- Desktop and Tablet Menu -->
 
     <div id="header">
 
@@ -85,6 +106,7 @@
             </ul>
         </div>
 
+
         <!-- Social Icons -->
 
         <div id="social-navbar">
@@ -97,7 +119,7 @@
             <a href="https://www.youtube.com/channel/UCvJ94MLfisViSgwBXn9QksQ?view_as=subscriber" target="_blank">
                 <i class="fab fa-youtube fa-lg"></i>
             </a>
-            
+
             <div class="dropdown">
                 <button onclick="myFunction()" class="dropbtn">Share</button>
                 <div id="myDropdown" class="dropdown-content">
@@ -113,6 +135,10 @@
 
 
     </div>
+
+   
+
+
 
     <div style="clear: both"></div>
     <!-- Showcase -->

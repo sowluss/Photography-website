@@ -25,8 +25,8 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="lightbox.css">
     <link rel="stylesheet" type="text/css" href="reflections.css">
-    <link rel="stylesheet" type="text/css" href="ipad.css" media="screen and (max-width: 1024px)">
-    <link rel="stylesheet" type="text/css" href="mobile.css" media="screen and (max-width: 768px)">
+    <link rel="stylesheet" type="text/css" href="ipad.css" media="screen and (max-width: 1200px)">
+    <link rel="stylesheet" type="text/css" href="mobile.css" media="screen and (max-width: 620px)">
     <link rel="shortcut icon" type="image/png" href="images/favicon.png">
 
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
@@ -46,12 +46,32 @@
 
     <!-- Header -->
 
+    <!-- Mobile Collapse button -->
+    <div class="mobile-sidebar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="reflections.html">Reflections</a></li>
+            <li><a href="lithuania.html">Lithuania</a></li>
+            <li><a href="england.html">England</a></li>
+            <li><a href="sunsets.html" class="current">Sunsets</a></li>
+        </ul>
+        <button class="sidebar-btn">
+            <span></span>
+        </button>
+    </div>
+
+    <div class="mobile-branding">
+        <img src="logos/SSPlogo.png" alt="logo">
+        <h2>Sowlus Simkus</h2>
+    </div>
+
+
     <div id="header">
 
         <!-- Logo & Title -->
 
         <div id="branding">
-            <img src="logos/SSPlogo.png" alt="logo" width="50" height="50">
+            <img src="logos/SSPlogo.png" alt="logo" width="60" height="60">
             <a class="index" href="./index.html">
                 <h2>Sowlus Simkus</h2>
             </a>
@@ -88,6 +108,9 @@
             <a href="https://500px.com/sowluss" target="_blank">
                 <i class="fab fa-500px fa-lg"></i>
             </a>
+            <a href="https://www.youtube.com/channel/UCvJ94MLfisViSgwBXn9QksQ?view_as=subscriber" target="_blank">
+                <i class="fab fa-youtube fa-lg"></i>
+            </a>
 
             <div class="dropdown">
                 <button onclick="myFunction()" class="dropbtn">Share</button>
@@ -101,7 +124,7 @@
                 </div>
             </div>
         </div>
-
+    </div>
 
 
         <div class="row">
@@ -111,13 +134,12 @@
                     <img src="Galleries/Sunsets/Resized_S/Sunsets_6.jpg" class="focus" width="100%">
                 </a>
                 <a href="Galleries/Sunsets/Resized_L/Sunset_10.jpeg" data-lightbox="gallery_S" data-title="">
-                    <img src="Galleries/Sunsets/Resized_S/Sunsets_10.jpg" class="focus" width="100%">
+                    <img src="Galleries/Sunsets/Resized_S/Sunsets_10.jpeg" class="focus" width="100%">
                 </a>
 
                 <a href="Galleries/Sunsets/Resized_L/Sunset_13.jpeg" data-lightbox="gallery_S" data-title="">
                     <img src="Galleries/Sunsets/Resized_S/Sunsets_13.jpg" class="focus" width="100%">
                 </a>
-
 
                 <a href="Galleries/Sunsets/Resized_L/Sunset_12.jpeg" data-lightbox="gallery_S" data-title="">
                     <img src="Galleries/Sunsets/Resized_S/Sunsets_12.jpg" class="focus" width="100%">
@@ -132,11 +154,8 @@
 
 
                 <a href="Galleries/Sunsets/Resized_L/Sunset_19.jpeg" data-lightbox="gallery_S" data-title="">
-                    <img src="Galleries/Sunsets/Resized_S/Sunsets_19.jpg" class="focus" width="100%">
+                    <img src="Galleries/Sunsets/Resized_S/Sunset_19.jpeg" class="focus" width="100%">
                 </a>
-
-
-
 
                 <a href="Galleries/Sunsets/Resized_L/Sunset_16.jpg" data-lightbox="gallery_S" data-title="">
                     <img src="Galleries/Sunsets/Resized_S/Sunsets_16.jpg" class="focus" width="100%">
@@ -146,7 +165,7 @@
                 </a>
 
                 <a href="Galleries/Sunsets/Resized_L/Sunset_15.jpeg" data-lightbox="gallery_S" data-title="">
-                    <img src="Galleries/Sunsets/Resized_S/Sunsets_15.jpg" class="focus" width="100%">
+                    <img src="Galleries/Sunsets/Resized_S/Sunsets_15.jpeg" class="focus" width="100%">
                 </a>
 
             </div>
@@ -169,7 +188,6 @@
                     <img src="Galleries/Sunsets/Resized_S/Sunsets_5.jpg" class="focus" width="100%">
                 </a>
 
-
                 <a href="Galleries/Sunsets/Resized_L/Sunset_1.jpg" data-lightbox="gallery_S" data-title="">
                     <img src="Galleries/Sunsets/Resized_S/Sunsets_1.jpg" class="focus" width="100%">
                 </a>
@@ -182,7 +200,7 @@
 
             <div class="column">
                 <a href="Galleries/Sunsets/Resized_L/Sunset_18.jpeg" data-lightbox="gallery_S" data-title="">
-                    <img src="Galleries/Sunsets/Resized_S/Sunsets_18.jpg" class="focus" width="100%">
+                    <img src="Galleries/Sunsets/Resized_S/Sunset_18.jpeg" class="focus" width="100%">
                 </a>
                 <a href="Galleries/Sunsets/Resized_L/Sunset_8.jpeg" data-lightbox="gallery_S">
                     <img src="Galleries/Sunsets/Resized_S/Sunsets_8.jpg" class="focus" width="100%">
@@ -193,7 +211,6 @@
                 <a href="Galleries/Sunsets/Resized_L/Sunset_14.jpeg" data-lightbox="gallery_S" data-title="">
                     <img src="Galleries/Sunsets/Resized_S/Sunsets_14.jpg" class="focus" width="100%">
                 </a>
-
 
                 <a href="Galleries/Sunsets/Resized_L/Sunset_11.jpg" data-lightbox="gallery_S" data-title="">
                     <img src="Galleries/Sunsets/Resized_S/Sunsets_11.jpg" class="focus" width="100%">

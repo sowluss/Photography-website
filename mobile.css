@@ -1,88 +1,221 @@
-div#header {
-    width: 100%;
-    position: absolute;
-    padding-bottom: 10px;
+/* MOBILE SIDEBAR */
+
+.mobile-sidebar {
+    display: block;
+    position: relative;
+    top: 0;
+    left: -200px;
+    background: transparent;
+    /* background: #706d6d; */
+    width: 200px;
+    height: 245px;
+    transition: .3s;
 }
 
-div#branding {
+.active {
+    left: 0;
+}
+
+.mobile-sidebar ul {
+    margin: 0;
+    padding: 20px 0;
+}
+
+.mobile-sidebar ul li {
+    text-decoration: none;
+}
+
+.mobile-sidebar ul li a {
+    padding: 10px 20px;
+    color: #fff;
+    display: block;
+    /* border-bottom: 1px solid #121212; */
+    text-decoration: none;
+    font-family: 'Karla', sans-serif;
+    font-weight: 100;
+    font-size: 15px;
+}
+
+.mobile-sidebar ul li a.current {
+    color: orange;
+    font-style: italic;
+  }
+  
+  .mobile-sidebar ul li a:hover {
+    color: #929595;
+    transition: .5s;
+  }
+
+.sidebar-btn {
+    position: absolute;
+    top: 0;
+    right: -50px;
+    width: 50px;
+    box-sizing: border-box;
+    cursor: pointer;
+    background: #121212;
+    border: none;
+    outline: none;
+}
+
+.sidebar-btn span {
+    display: block;
+    width: 35px;
+    height: 3px;
+    background: #fff;
+    position: absolute;
+    top: 24px;
+    transition: .3s;
+}
+
+.sidebar-btn span::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 0;
     width: 100%;
+    height: 3px;
+    background: #fff;
+    transition: .3s;
+}
+
+.sidebar-btn span::after {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    transition: .3s;
+}
+
+.sidebar-btn.toggle span {
+    background: transparent;
+}
+
+.sidebar-btn.toggle span::before {
+    top: 0;
+    transform: rotate(45deg);
+}
+
+.sidebar-btn.toggle span::after {
+    top: 0;
+    transform: rotate(-45deg);
+}
+
+/* HEADER */
+
+div#header {
+    height: 100px;
+  }
+
+/* BRANDING section */
+
+.mobile-branding {
+    display: block;
+    position: absolute;
+    margin-top: -200px;
+    z-index: -1;
     text-align: center;
-    margin-top: 10px;
-   }
-
-    div#branding img { 
-    float: left;
-    margin-top: 5px;  
-    margin-left: 75px;
+    width: 100%;
   }
 
-  div#branding h2 {
-    margin-top: 15px; 
-    margin-right: 70px; 
+  .mobile-branding img {
+      position: relative;
+      width: 90px;
+      height: 90px;
   }
+
+  .mobile-branding h2 {
+    font-family: 'Hind Siliguri', sans-serif;
+    font-size: 26px;
+    color: #ddd;
+    margin-top: 20px;
+  }
+
+
+/* Desktop Navbar */
+div#branding {
+    display: none;
+}
+
+div#branding img {
+    display: none;
+}
+
+div#branding h2 {
+    display: none;
+}
 
 div#navbar {
-    display: inline;
+    display: none;
 }
 
-div#navbar ul li {
-    width: 50%;
-    text-align: center;
-    display: inline-block;
-    padding: 10px; 
-    margin-top: -30px;
-}
 
 #social-navbar {
     width: 100%;
-    /* display: inline; */
-    text-align: center; 
-    float: left;
-    /* padding-top: 10px; */
-    margin-bottom: 15px;
 }
 
-  img#main-image {
-    padding: auto;
-    margin-top: 330px;
+
+
+
+/* SHOWCASE */
+
+div#showcase {
+    padding-top: 0;
+    margin: 20px auto;
     width: 100%;
-    }
+}
 
-    .dropdown {
-        display: none; 
-    }
+img#main-image {
+    display: none;
+}
 
-    /* About */
+img#mobile-image {
+    padding: auto;
+    width: 100%;
+    display: block;
+    margin-top: -60px;
+}
 
-div#content { 
+
+/* About */
+
+div#content {
     width: 80%;
     display: block;
-    padding-right: 20px; 
+    padding-right: 20px;
     padding-left: 20px;
-    margin-top: 40px; 
-    margin-left: auto; 
-    margin-right: auto; 
-    }
-      
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 div.container {
     width: 80%;
     display: block;
-    margin-top: 40px;
-    padding-right: 20px; 
+    margin-top: 50px;
+    padding-right: 20px;
     padding-left: 20px;
-    }
+}
 
 
 div#footer {
-        bottom: 0;
-        left: 0;
-        text-align: center;
-        padding-bottom: 10px;
-    }
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    padding-bottom: 10px;
+}
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+
 .column {
-        -ms-flex: 100%;
-        flex: 100%;
-        max-width: 100%;
-    }
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+}
+
+.row {
+    margin-top: 50px;
+}

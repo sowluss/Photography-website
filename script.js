@@ -20,15 +20,40 @@ window.onclick = function (event) {
   }
 }
 
-
-
 // Right button disabled to prevent from dowloading images
 
 function nocontext(e) {
-  var clickedTag = (e==null) ? event.srcElement.tagName : e.target.tagName;
+  var clickedTag = (e == null) ? event.srcElement.tagName : e.target.tagName;
   if (clickedTag == "IMG")
     return false;
 }
 document.oncontextmenu = nocontext;
 
 
+//  Navigation bar transparency changes when scrolling  
+
+var scroll_transparency = false;
+
+$(window).scroll(function() {
+
+  if ($(window).scrollTop() == 0) {
+    scroll_transparency = false;
+    $('div#header').fadeTo("fast", 1);
+
+  } else {
+    if (scroll_transparency == false) {
+      $('div#header').fadeTo("fast", .8);
+      scroll_transparency = true;
+    }
+  }
+});
+
+//  MOBILE SIDEBAR
+
+$(document).ready(function() {
+  $('.sidebar-btn').click(function() {
+    $('.mobile-sidebar').toggleClass('active');
+    $('.sidebar-btn').toggleClass('toggle');
+  })
+})
+ 
