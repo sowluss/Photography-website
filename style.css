@@ -17,12 +17,14 @@ body {
 div#header {
   background-color: #121212;
   width: 100%;
+  height: 130px;
   position: fixed;
   top: 0;
   left: 0;
   justify-content: center;
   align-items: center;
   z-index: 1;
+
 }
 
 div#header h2 {
@@ -64,7 +66,6 @@ div#branding {
 /* Navigation */
 
 div#navbar {
-  /* width: 56%;  */
   margin: 0 auto;
   display: inline-block;
   padding-bottom: 30px;
@@ -357,4 +358,49 @@ div#footer h6 {
 
 img.focus {
   padding-bottom: 6px;
+}
+
+
+/****** Desktop Navbar media queries min-width: 1337px ******/
+
+@media (min-width: 1336px) {
+  div#header {
+    display: grid;
+    grid-template-columns: 20% 55% 20%;
+    margin: 0 auto;
+  }
+
+  div#branding {
+    margin-left: 0;
+    display: inline-block;
+    width: 100%;
+  }
+
+  div#branding img {
+    float: left;
+    margin: 0 10px;
+  }
+
+  div#header h2 {
+    margin-top: 21px;
+  }
+
+  #navbar {
+    display: inline-block;
+    width: 100%;
+    height: 57px;
+    padding: 0;
+    text-align: center;
+  }
+
+  #navbar ul {
+    text-align: center;
+  }
+
+  #social-navbar {
+    margin-top: 5px;
+    margin-left: 110px;
+    padding-right: 20px;
+    width: 100%;
+  }
 }
