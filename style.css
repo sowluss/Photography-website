@@ -248,6 +248,7 @@ h5 {
   color: #fff;
   font-weight: 300;
   font-family: 'Dosis', sans-serif;
+  letter-spacing: 1px;
 }
 
 div#content p {
@@ -320,10 +321,13 @@ form {
 
 input {
   height: 35px;
+  color: black;
+  
 }
 
 textarea {
   resize: none;
+  color: black;
 }
 
 form .submit {
