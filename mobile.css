@@ -1,12 +1,12 @@
 /* MOBILE SIDEBAR */
-
 .mobile-sidebar {
     display: block;
     position: relative;
     top: 0;
     left: -200px;
-    background: transparent;
-    /* background: #706d6d; */
+    /* background: transparent; */
+    /* background: rgb(2, 0, 36); */
+    background: linear-gradient(90deg, rgba(2, 0, 36, 0.8645833333333334) 0%, rgba(59, 59, 62, 0.520045518207283) 100%, rgba(0, 212, 255, 1) 100%);
     width: 200px;
     height: 245px;
     transition: .3s;
@@ -39,12 +39,12 @@
 .mobile-sidebar ul li a.current {
     color: orange;
     font-style: italic;
-  }
-  
-  .mobile-sidebar ul li a:hover {
+}
+
+.mobile-sidebar ul li a:hover {
     color: #929595;
     transition: .5s;
-  }
+}
 
 .sidebar-btn {
     position: absolute;
@@ -105,13 +105,11 @@
 }
 
 /* HEADER */
-
 div#header {
     height: 100px;
-  }
+}
 
 /* BRANDING section */
-
 .mobile-branding {
     display: block;
     position: absolute;
@@ -119,21 +117,20 @@ div#header {
     z-index: -1;
     text-align: center;
     width: 100%;
-  }
+}
 
-  .mobile-branding img {
-      position: relative;
-      width: 90px;
-      height: 90px;
-  }
+.mobile-branding img {
+    position: relative;
+    width: 90px;
+    height: 90px;
+}
 
-  .mobile-branding h2 {
+.mobile-branding h2 {
     font-family: 'Hind Siliguri', sans-serif;
     font-size: 26px;
     color: #ddd;
     margin-top: 20px;
-  }
-
+}
 
 /* Desktop Navbar */
 div#branding {
@@ -155,11 +152,9 @@ div#navbar {
 /* Dropdown content */
 .dropdown-content a {
     text-align: left;
-  }
-  
+}
 
 /* SHOWCASE */
-
 img#main-image {
     display: none;
 }
@@ -177,9 +172,7 @@ img#mobile-image {
     margin-top: -60px;
 }
 
-
 /* About */
-
 div#content {
     width: 80%;
     display: block;
@@ -198,7 +191,6 @@ div.container {
     padding-left: 20px;
 }
 
-
 div#footer {
     bottom: 0;
     left: 0;
@@ -208,7 +200,6 @@ div#footer {
 }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-
 .column {
     -ms-flex: 100%;
     flex: 100%;
